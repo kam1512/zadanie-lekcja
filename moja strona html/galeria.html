@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Moja Strona HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #555;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .galeria img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .video-section iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .galeria-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .galeria-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeria</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="o-nas.html">O Nas</a></li>
+                <li><a href="uslugi.html">Usługi</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="galeria-container">
+            <div class="galeria-header">
+                <h2>Nasze Prace</h2>
+                <p>Zapraszamy do obejrzenia naszej galerii.</p>
+            </div>
+            <div class="galeria">
+                <img src="zdjecia/przyklad 1.jpg" alt="Przykład 1" width="300">
+                <img src="zdjecia/przyklad 2.jpg" alt="Przykład 2">
+                <img src="zdjecia/przyklad 3.jpg" alt="Przykład 3">
+                <img src="zdjecia/przyklad 4.jpg" alt="Przykład 4">
+            </div>
+        </section>
+        
+        <section class="video-section">
+            <h2>Wideo</h2>
+            <p>Oglądaj nasze wideo prezentujące nasze projekty.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/k2IydkL3EOs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Moja Strona HTML. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
